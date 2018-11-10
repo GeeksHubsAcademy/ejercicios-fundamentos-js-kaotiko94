@@ -35,3 +35,9 @@ let gente = [{
     },
 ]
 
+let filtrado = gente.filter(function(element){
+    if(element.nombre [0] ==="J" || element.nombre[0]==="L"){
+        return element.nombre;
+    }
+})
+console.log(filtrado);

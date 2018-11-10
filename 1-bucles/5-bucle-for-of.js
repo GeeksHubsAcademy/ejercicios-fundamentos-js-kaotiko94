@@ -33,3 +33,9 @@ let gente = [{
         edad: 10
     },
 ]
+
+for (let a of gente){
+    if(a.nombre[0]==="J" ){
+        console.log(a.nombre);
+    }
+}

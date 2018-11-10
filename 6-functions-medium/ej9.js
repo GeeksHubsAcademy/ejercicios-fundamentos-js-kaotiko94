@@ -14,7 +14,20 @@
 let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-   
+    if (typeof desde !== 'number' && typeof hasta !== 'number') {
+        throw new Error('Debo recibir números');
+    } else if (desde > hasta) {
+        for (let i = hasta; i <= desde; i++) {
+            console.log(i);
+            sumatorio += i;
+        }
+    } else {
+        for (let i = desde; i <= hasta; i++) {
+            console.log(i);
+            sumatorio += i;
+        }
+    }
+
     // Hasta aquí.
     return acronimo;
 }

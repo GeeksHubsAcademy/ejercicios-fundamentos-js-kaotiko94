@@ -33,3 +33,10 @@ let gente = [{
     },
 ]
 
+let filtrada = gente.filter( function( element ) {
+    if(element.nombre.length===4){
+        return element.nombre;
+    }
+})
+console.log(filtrada);
+

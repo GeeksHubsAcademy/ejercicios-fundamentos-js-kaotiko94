@@ -10,7 +10,16 @@
 
 // Aquí tu código
 
+function muestraPorConsolaEurosEnPesetas(euro) {
 
+    if (typeof euro !== 'number') {
+        throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
+    } else {
+        euro *= 168;
+        console.log(euro);
+    }
+    return ;
+}
 // Hasta aquí
 
 

@@ -17,6 +17,12 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 console.log('El array original es:  arr =', arr);
 
 // Aquí tu código
+let giveMeIntegerRandom = max => Math.round(Math.random() * max) + 1;
+let arr = [];
+for (let i = 0; i < giveMeIntegerRandom(10); i++) {
+    arr[i] = giveMeIntegerRandom(4)
+}
+console.log('El array original es:  arr =', arr);
 
 
 // Hasta aquí
